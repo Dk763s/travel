@@ -1,0 +1,540 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&family=Poppins:ital,wght@0,200;1,300;1,500;1,600&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/istockphoto-1087049706-612x612.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* h1 {
+    color: white;
+    font-weight: 400;
+} */
+
+.navbar {
+    padding: 1rem;
+}
+
+.header .logo,
+.header .navbar a {
+    color: wheat;
+}
+
+.header .navbar .logo {
+    float: left;
+    font-size: 3.5rem;
+}
+
+.header .navbar .nav-item {
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: #f4f4f4;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid white;
+}
+
+
+/* ####### UTILITY CLASSES ####### */
+
+
+/* .text-red {
+    color: red;
+}
+
+text.light {
+    color: lightcyan;
+} */
+
+p,
+li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: .15em;
+}
+
+
+/* ############ Html element ############### */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: .15em;
+}
+
+
+/* ############### Header content  styling ############### */
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary:hover {
+    background-color: turquoise;
+}
+
+.btn-primary {
+    background-color: white;
+    border-radius: 100rem;
+}
+
+.header-content {
+    position: absolute;
+    /* border: 2px solid white; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* ##########show case classes styling ########### */
+
+.showcase {
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row {
+    height: 350px;
+    /* border: 2px solid red; */
+    box-shadow: 2px 2px rgba(29, 28, 28, 0.333);
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+    float: right;
+    width: 50%;
+}
+
+.row .img-box {
+    /* border: 2px solid green; */
+    height: 100%;
+}
+
+.row .text-box {
+    /* border: 2px solid blue; */
+    padding: 3rem;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+}
+
+.row .img-box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lg-heading {
+    text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+    background-color: violet;
+}
+
+.btn-secondary {
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 10rem;
+    color: red;
+}
+
+.row ::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ######## features section styling ###########  */
+
+.features {
+    padding: 5rem 0;
+}
+
+.main-box {
+    /* border: 2px solid red; */
+    box-shadow: 5px 3px 2px 3px black;
+}
+
+.box {
+    /* border: 2px solid blue; */
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}
+
+.main-box {
+    content: "";
+    display: block;
+    float: left;
+}
+
+.box1,
+.box3 {
+    background-color: #262626;
+    color: honeydew;
+}
+
+.box2 {
+    background-color: rgb(245, 173, 153);
+    color: white;
+}
+
+.main-box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ############# footer styleing ############ */
+
+.footer {
+    background: #e1a2a2;
+    color: #ddd;
+    padding: 2rem;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.social-media-links i {
+    margin: 2rem;
+}
+
+
+/* ############  ABOUT ############      */
+
+.bg-dark {
+    background-color: #262626;
+}
+
+.about {
+    padding: 5rem 0rem;
+}
+
+
+/* .about-h1 {
+    border-bottom: 5px solid orangered;
+    width: 100px;
+} */
+
+.about-h1::after {
+    content: " ";
+    border: 3px solid orangered;
+    display: block;
+    width: 600px;
+}
+
+
+/* ########### about 11 #$########## */
+
+.about11 .left {
+    float: left;
+    width: 50%;
+}
+
+.about11 .right {
+    float: right;
+    width: 50%;
+}
+
+.about11 {
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.about11::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about11 li::before {
+    content: "\2714";
+    color: red;
+    padding-right: "1rem"
+}
+
+
+/* ########## Count styling###############  */
+
+.count {
+    /* border: 2px solid black; */
+    margin-top: 3rem;
+}
+
+.coutn-item {
+    /* border: 2px solid green; */
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.count::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.coutn-item span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: red;
+}
+
+.coutn-item p {
+    font-weight: 700;
+    color: green;
+    font-size: 1.5rem;
+}
+
+
+/* ########## Banner styling ########## */
+
+.banner {
+    /* border: 2px solid green; */
+    background-color: lightsalmon;
+    color: white;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px #e1a2a2;
+    margin-top: 3rem;
+}
+
+.banner-left {
+    float: left;
+    width: 60%;
+}
+
+.banner-right {
+    float: right;
+    border: 2px solid red;
+    width: 40%;
+}
+
+.banner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn-banner {
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 0.3rem 2.5rem;
+    letter-spacing: 0.1rem;
+    color: #f4f4f4;
+}
+
+
+/* ############ Contact form styling ############## */
+
+.contact-form {
+    padding: 5rem 0;
+    /* font-size: 2rem; */
+    background: #f7f7f7;
+}
+
+
+/* .form-wrapper {
+    border: 4px solid black;
+} */
+
+.form-wrapper .company-address {
+    background: #ffff;
+    /* border: 2px dotted green; */
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+
+.form-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .company-address i {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.form-wrapper .company-address h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group {
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img {
+    width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: left;
+}
+
+
+/* ########## Form styling ############ */
+
+.form-wrapper .form {
+    font-size: 1.6rem;
+    background: #ffff;
+    /* border: 3px dotted red; */
+    width: 49%;
+    float: right;
+}
+
+.form h1::after {
+    content: "";
+    display: block;
+    /* border: 3px solid rgb(15, 178, 223); */
+    width: 100%;
+}
+
+.form-wrapper label {
+    display: block;
+}
+
+.form-wrapper .form input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after {
+    content: "*";
+    color: #e66634;
+}
+
+.form-wrapper .form textarea {
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.btn-submit {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #efff;
+    outline: none;
+    border: none;
+    cursor: pointer
+}
+
+
+/* ############# media Quries ############ */
+
+@media (max-width: 500px) {
+    html {
+        /* font-size: 8px; */
+        font-size: 50%;
+    }
+    .navbar .nav-item,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .header-content h1 {
+        display: none;
+    }
+    .row {
+        height: auto;
+        width: 100%;
+        content: "";
+        display: block;
+    }
+    .row2 .img-box,
+    .row1 .text-box {
+        width: 100%;
+        height: 100%;
+    }
+    /* .features .box {
+        float: none;
+        width: 100;
+        text-align: center;
+    } */
+}
